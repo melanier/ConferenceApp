@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="PackageRoot\**" />
+    <Content Remove="PackageRoot\**" />
+    <EmbeddedResource Remove="PackageRoot\**" />
+    <None Remove="PackageRoot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="docker-compose.yml" />
   </ItemGroup>
 
