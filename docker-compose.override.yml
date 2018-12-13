@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  conferenceapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - 5001:80
+
+networks:
+  default:
+    external:
+      name: nat
